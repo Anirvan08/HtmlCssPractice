@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0%;
+    background-color: rgb(rgb(149, 102, 102), rgb(163, 180, 163), rgb(64, 64, 74));
+    font-family: 'Noto Sans', sans-serif;
+
+
+}
+
+.page {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    grid-template-areas:
+    "order payment"
+    "total total";
+}
+
+.main-nav {
+    background: #43281c;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fbf2c0;
+    font-weight: bold;
+}
+
+.logo {
+    height: 30px;
+    
+}
+
+.box {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%; 
+    box-shadow: 0 1px 3px rgb(0 0 0 /0.2);
+}
+
+.box-title {
+    color: #885a3c;
+    font-size: 20px;
+}
+
+.order {
+    grid-area: order;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+.total {
+    grid-area: total;
+}
+
+.items {
+    list-style: none;
+    padding: 0%;
+    margin: 0;
+
+
+}
+
+.item {
+border-bottom: 2px solid #DDB892;
+display: grid;
+padding: 10px 0;
+
+grid-template-columns: 1fr 8fr 1fr;
+grid-template-areas: 
+"quantity title price"
+"quantity options price";
+
+row-gap: 8px;
+}
+
+.item:last-child{
+    border-bottom: none;
+
+
+}
+
+.item-quantity {
+    grid-area: quantity;
+}
+
+.item-title {
+    grid-area: title;
+    font-weight: bold;
+}
+
+.item-price {
+    grid-area: price;
+    font-weight: bold;
+}
+
+.item-options-list {
+    grid-area: options;
+    color: #B08968;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    font-size: 14px;
+}
+
+.item-option {
+    margin-bottom: 5px;
+}
+
+.group-input {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.user-input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px #885a2d solid;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 105px; 
+    width: 100%;
+   margin-top: 5px; /* Add margin for separation */
+    text-indent: 18px;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+
+  .user-input-label {
+    color: #885a2d;
+    background-color: #eee1d5;
+    font-size: 11px;
+    position: absolute;
+    left: 8px; /* Adjust as needed */
+    top: -7px;
+    padding: 0 2px;
+    z-index: 1;
+}
+
+  .total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .totals-table {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+
+  .totals-table td {
+    padding: 10px;
+  }
+
+  .totals-table td:last-child {
+    text-align: right;
+  }
+
+  .final-totals {
+    font-weight: bold;
+  }
+
+  .checkout {
+    background-color: #deb993;
+    border-radius: 100px ;
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+    font-size: 16px;
+
+  }
+
+.item-title {
+    grid-area: title;
+    font-weight: bold;
+}
+
+.item-price {
+    grid-area: price;
+    font-weight: bold;
+}
+
+.final-totals {
+    font-weight: bold;
+}
